@@ -16,7 +16,7 @@ The ASCAD database was used, specifically the ATM_AES_v1_fixed_key dataset, to c
 
 Follow these steps to conduct the experiment:
 
-1. **Choose Countermeasure**: Decide which countermeasure you want to test, options include 'gauss', 'rdi', and 'desync'. Set the chosen countermeasure in both `run.py` and `optuna_hybrid.py` in the 'Set Parameters' section. Note that instead of setting the parameters in the file, one can also choose to run the files with the following command: 'python optuna_hybrid.py <countermeasure> <storage> <study_name>' and 'python run.py <countermeasure>'. Also note that for desynchronization, the noise is readily provided by the ASCAD database and wil not be generated in the code.
+1. **Choose Countermeasure**: Decide which countermeasure you want to test, options include 'gauss', 'rdi', and 'desync'. Set the chosen countermeasure in both `run.py` and `optuna_hybrid.py` in the 'Set Parameters' section. Note that instead of setting the parameters in the file, one can also choose to run the files with the following command: 'python optuna_hybrid.py countermeasure storage study_name' and 'python run.py countermeasure'. Also note that for desynchronization, the noise is readily provided by the ASCAD database and wil not be generated in the code.
 
 2. **Set Optuna Parameters**: In `optuna_hybrid.py`, configure the storage location and search name in the 'Set Parameters' section. The storage determines where Optuna stores its results (if you want to save this in memory set this to 'None'). Please head to the [optuna documentation](https://optuna.readthedocs.io/en/stable/reference/generated/optuna.study.create_study.html) for additional help regarding the storage parameter.
 
